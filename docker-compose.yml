@@ -16,4 +16,6 @@ services:
     working_dir: /app
     ports:
       - "5001:5000"
+    env_file:
+      - ./backend/.env  # Add this line to load .env variables
     command: sh -c "npm install && npm run dev"

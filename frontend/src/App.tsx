@@ -1,13 +1,16 @@
 import React from 'react';
-// import './App.css';
 import ChatInterface from './ChatInterface';
-
+import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>AI Chatbot</h1>
-      <ChatInterface />
+      <header className="App-header">
+        <h1>AI Chatbot</h1>
+      </header>
+      <main>
+        <ChatInterface />
+      </main>
     </div>
   );
 };
