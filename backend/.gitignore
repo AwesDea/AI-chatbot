@@ -1,0 +1,22 @@
+# Ignore node_modules
+node_modules
+
+# Build output (if using TypeScript)
+dist
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# IDE specific files
+.vscode/
+.idea/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
