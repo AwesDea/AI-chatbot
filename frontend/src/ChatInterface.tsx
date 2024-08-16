@@ -30,7 +30,7 @@ const ChatInterface: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5001/chat', { message: input });
+      const response = await axios.post('http://localhost:5500/chat', { message: input });
       setMessages([...newMessages, { text: response.data.reply, fromUser: false }]);
     } catch (error) {
       console.error('Error sending message:', error);
